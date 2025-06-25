@@ -17,12 +17,13 @@
             _tableName = awsOptions.Value.DynamoTableName;
         }
 
-        public async Task PutItemAsync(string key, DateTime uploadedAt)
+        public async Task PutItemAsync(string fileName,string sha256, DateTime uploadedAt)
         {
             var table = Table.LoadTable(_dynamoClient, _tableName);
             var doc = new Document
             {
-                ["Filename"] = key,
+                ["Filename"] = fileName,
+                ["Sha256"] = sha256,
                 ["UploadedAt"] = uploadedAt.ToString("o")
             };
             await table.PutItemAsync(doc);

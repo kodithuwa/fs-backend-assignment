@@ -41,13 +41,6 @@ namespace FileStorage.Controllers
             return Ok("File uploaded.");
         }
 
-        [HttpGet("download/{fileName}")]
-        public async Task<IActionResult> Download(string fileName)
-        {
-            var stream = await this.s3Service.GetFileAsync(fileName);
-            return File(stream, "application/octet-stream", fileName);
-        }
-
         [HttpGet("list")]
         public async Task<IActionResult> List()
         {

@@ -32,7 +32,7 @@
             _dynamoClient = dynamoClient;
             _dynamoTableService = dynamoTableService;
             _s3BucketUtil = s3BucketUtil;
-            _s3BucketUtil.DoesBucketExistAsync(_s3Client).GetAwaiter();
+            _s3BucketUtil.DoesBucketExistAsync(_s3Client).GetAwaiter().GetResult();
         }
 
         public async Task UploadFileAsync(string key, Stream inputStream)
@@ -85,14 +85,7 @@
                     PartETags = partETags
                 };
                 await _s3Client.CompleteMultipartUploadAsync(completeRequest);
-
-                var doc = new Document
-                {
-                    ["Filename"] = key,
-                    ["UploadedAt"] = DateTime.UtcNow.ToString("o")
-                };
-
-                await _dynamoTableService.PutItemAsync(key, DateTime.UtcNow);
+                await _dynamoTableService.PutItemAsync(key, sha256Hex, DateTime.UtcNow);
             }
             catch
             {

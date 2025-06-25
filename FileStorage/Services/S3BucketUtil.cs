@@ -1,6 +1,7 @@
 ﻿namespace sf_backend_ass_test.services
 {
     using Amazon.S3;
+    using Amazon.S3.Model;
     using Amazon.S3.Util;
     using FileStorage.Models;
     using FileStorage.Services.Contracts;
@@ -19,6 +20,13 @@
         public async Task<bool> DoesBucketExistAsync(IAmazonS3 s3Client)
         {
            var isExisted = await AmazonS3Util.DoesS3BucketExistV2Async(s3Client, _bucketName);
+            if (!isExisted)
+            {
+                await s3Client.PutBucketAsync(new PutBucketRequest
+                {
+                    BucketName = _bucketName
+                });
+            }
             return isExisted;
         }
 

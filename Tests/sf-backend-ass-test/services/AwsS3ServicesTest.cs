@@ -44,7 +44,7 @@
             s3Mock.Setup(s => s.AbortMultipartUploadAsync(It.IsAny<AbortMultipartUploadRequest>(), It.IsAny<CancellationToken>()))
                 .ReturnsAsync(new AbortMultipartUploadResponse());
 
-            dynamoTableServiceMock.Setup(d => d.PutItemAsync(It.IsAny<string>(), It.IsAny<DateTime>()))
+            dynamoTableServiceMock.Setup(d => d.PutItemAsync(It.IsAny<string>(), It.IsAny<string>(), It.IsAny<DateTime>()))
                 .Returns(Task.CompletedTask);
 
             var service = new AwsS3Service(options, amazonDb.Object, dynamoTableServiceMock.Object, is3BucketUtilMock.Object);
@@ -62,7 +62,7 @@
             s3Mock.Verify(s => s.InitiateMultipartUploadAsync(It.IsAny<InitiateMultipartUploadRequest>(), It.IsAny<CancellationToken>()), Times.Once);
             s3Mock.Verify(s => s.UploadPartAsync(It.IsAny<UploadPartRequest>(), It.IsAny<CancellationToken>()), Times.AtLeastOnce);
             s3Mock.Verify(s => s.CompleteMultipartUploadAsync(It.IsAny<CompleteMultipartUploadRequest>(), It.IsAny<CancellationToken>()), Times.Once);
-            dynamoTableServiceMock.Verify(d => d.PutItemAsync("test-key", It.IsAny<DateTime>()), Times.Once);
+            dynamoTableServiceMock.Verify(d => d.PutItemAsync("test-key",It.IsAny<string>(), It.IsAny<DateTime>()), Times.Once);
         }
 
         [Fact]

@@ -2,6 +2,6 @@
 {
     public interface IDynamoTableService
     {
-        Task PutItemAsync(string key, DateTime uploadedAt);
+        Task PutItemAsync(string fileName, string sha256, DateTime uploadedAt);
     }
 }
