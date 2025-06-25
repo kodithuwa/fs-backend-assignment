@@ -8,13 +8,13 @@ namespace FileStorage.Controllers
     [Route("[controller]")]
     public class FileStorageController : ControllerBase
     {
-        private readonly ILogger<FileStorageController> logger;
-        private readonly IAwsS3Service s3Service;
+        private readonly ILogger<FileStorageController> _logger;
+        private readonly IAwsS3Service _s3Service;
 
         public FileStorageController(ILogger<FileStorageController> logger, IAwsS3Service s3Service)
         {
-            this.logger = logger;
-            this.s3Service = s3Service;
+            _logger = logger;
+            _s3Service = s3Service;
         }
 
         [RequestSizeLimit(2L * 1024 * 1024 * 1024)] // 2GB
@@ -37,14 +37,14 @@ namespace FileStorage.Controllers
             }
 
             using var stream = file.OpenReadStream();
-            await this.s3Service.UploadFileAsync(file.FileName, stream);
+            await _s3Service.UploadFileAsync(file.FileName, stream);
             return Ok("File uploaded.");
         }
 
         [HttpGet("list")]
         public async Task<IActionResult> List()
         {
-            var files = await this.s3Service.ListFilesAsync();
+            var files = await _s3Service.ListFilesAsync();
             return Ok(files);
         }
     }
