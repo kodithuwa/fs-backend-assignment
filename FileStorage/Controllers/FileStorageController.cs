@@ -17,6 +17,7 @@ namespace FileStorage.Controllers
             this.s3Service = s3Service;
         }
 
+        [RequestSizeLimit(2L * 1024 * 1024 * 1024)] // 2GB
         [HttpPost("upload")]
         public async Task<IActionResult> Upload([FromForm] IFormFile file)
         {
@@ -25,12 +26,12 @@ namespace FileStorage.Controllers
                 return BadRequest("No file provided.");
             }
 
-            if(file.Length < 128 * 1024 * 1024) // 128KB minimum size
+            if(file.Length < 128 * 1024) // 128KB minimum size
             {
                 return BadRequest("File size must be at least 128KB.");
             }
 
-            if(file.Length > (long)2*1024*1024*1024) // 2GB maximum size   
+            if(file.Length > 2L*1024*1024*1024) // 2GB maximum size   
             {
                 return BadRequest("File size exceeds the limit of 2GB.");
             }

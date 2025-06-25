@@ -15,7 +15,7 @@
 	<ItemGroup>
 		<PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks" Version="9.0.0" />
 	</ItemGroup>
-	<Target Name="PreBuildMake" BeforeTargets="PreBuildEvent">
+	<!--<Target Name="PreBuildMake" BeforeTargets="PreBuildEvent">
 		<Exec Command="make -C .. up" />
-	</Target>
+	</Target>-->
 </Project>

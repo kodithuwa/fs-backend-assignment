@@ -4,61 +4,52 @@
     using Amazon.DynamoDBv2.DocumentModel;
     using Amazon.S3;
     using Amazon.S3.Model;
-    using Amazon.S3.Util;
+    using FileStorage.Models;
     using FileStorage.Services.Contracts;
+    using Microsoft.Extensions.Options;
     using System.Security.Cryptography;
 
     public class AwsS3Service : IAwsS3Service
     {
-        private readonly IAmazonS3 s3Client;
-        private readonly IAmazonDynamoDB dynamoClient;
-        private readonly string bucketName;
-        private readonly string dynamoTableName;
-        private const int PartSize = 5 * 1024 * 1024; // 5MB
+        private readonly IAmazonS3 _s3Client;
+        private readonly IAmazonDynamoDB _dynamoClient;
+        private readonly string _bucketName;
+        private const int _partSize = 5 * 1024 * 1024; // 5MB
+        private readonly IDynamoTableService _dynamoTableService;
+        private readonly IS3BucketUtil _s3BucketUtil;
 
-        public AwsS3Service(IConfiguration configuration, IAmazonDynamoDB dynamoClient)
+        public AwsS3Service(IOptions<AWSModels> awsOptions,IAmazonDynamoDB dynamoClient, IDynamoTableService dynamoTableService, IS3BucketUtil s3BucketUtil)
         {
+            var options = awsOptions.Value;
             var awsConfig = new AmazonS3Config
             {
-                ServiceURL = configuration["AWS:ServiceURL"],
+                ServiceURL = options.ServiceURL,
                 ForcePathStyle = true
             };
 
-            this.s3Client = new AmazonS3Client("test", "test", awsConfig);
-            this.bucketName = configuration["AWS:BucketName"] ?? throw new ArgumentNullException(nameof(configuration), "AWS:BucketName is not configured.");
-            this.dynamoClient = dynamoClient;
-            this.dynamoTableName = "Files";
-            EnsureBucketExistsAsync().Wait();
-        }
-
-        private async Task EnsureBucketExistsAsync()
-        {
-            // Use AmazonS3Util to check if the bucket exists
-            var exists = await AmazonS3Util.DoesS3BucketExistV2Async(this.s3Client, bucketName);
-            if (!exists)
-            {
-                await this.s3Client.PutBucketAsync(new PutBucketRequest
-                {
-                    BucketName = bucketName
-                });
-            }
+            _s3Client = new AmazonS3Client(options.AccessKey, options.SecretKey, awsConfig);
+            _bucketName = options.BucketName;
+            _dynamoClient = dynamoClient;
+            _dynamoTableService = dynamoTableService;
+            _s3BucketUtil = s3BucketUtil;
+            _s3BucketUtil.DoesBucketExistAsync(_s3Client).GetAwaiter();
         }
 
         public async Task UploadFileAsync(string key, Stream inputStream)
         {
             var initRequest = new InitiateMultipartUploadRequest
             {
-                BucketName = bucketName,
+                BucketName = _bucketName,
                 Key = key
             };
-            var initResponse = await this.s3Client.InitiateMultipartUploadAsync(initRequest);
+            var initResponse = await _s3Client.InitiateMultipartUploadAsync(initRequest);
             string uploadId = initResponse.UploadId;
 
             var partETags = new List<PartETag>();
             int partNumber = 1;
 
             using var sha256 = SHA256.Create();
-            byte[] buffer = new byte[PartSize];
+            byte[] buffer = new byte[_partSize];
             int bytesRead;
 
             try
@@ -70,7 +61,7 @@
                     using var partStream = new MemoryStream(buffer, 0, bytesRead);
                     var uploadPartRequest = new UploadPartRequest
                     {
-                        BucketName = bucketName,
+                        BucketName = _bucketName,
                         Key = key,
                         UploadId = uploadId,
                         PartNumber = partNumber,
@@ -78,7 +69,7 @@
                         PartSize = bytesRead
                     };
 
-                    var uploadPartResponse = await this.s3Client.UploadPartAsync(uploadPartRequest);
+                    var uploadPartResponse = await _s3Client.UploadPartAsync(uploadPartRequest);
                     partETags.Add(new PartETag(partNumber, uploadPartResponse.ETag));
                     partNumber++;
                 }
@@ -88,26 +79,26 @@
 
                 var completeRequest = new CompleteMultipartUploadRequest
                 {
-                    BucketName = bucketName,
+                    BucketName = _bucketName,
                     Key = key,
                     UploadId = uploadId,
                     PartETags = partETags
                 };
-                await this.s3Client.CompleteMultipartUploadAsync(completeRequest);
+                await _s3Client.CompleteMultipartUploadAsync(completeRequest);
 
-                var table = Table.LoadTable(dynamoClient, dynamoTableName);
                 var doc = new Document
                 {
                     ["Filename"] = key,
                     ["UploadedAt"] = DateTime.UtcNow.ToString("o")
                 };
-                await table.PutItemAsync(doc);
+
+                await _dynamoTableService.PutItemAsync(key, DateTime.UtcNow);
             }
             catch
             {
-                await this.s3Client.AbortMultipartUploadAsync(new AbortMultipartUploadRequest
+                await _s3Client.AbortMultipartUploadAsync(new AbortMultipartUploadRequest
                 {
-                    BucketName = bucketName,
+                    BucketName = _bucketName,
                     Key = key,
                     UploadId = uploadId
                 });
@@ -117,7 +108,7 @@
 
         public async Task<Stream> GetFileAsync(string key)
         {
-            var response = await this.s3Client.GetObjectAsync(bucketName, key);
+            var response = await _s3Client.GetObjectAsync(_bucketName, key);
             return response.ResponseStream;
         }
 
@@ -125,11 +116,12 @@
         {
             var request = new ListObjectsV2Request
             {
-                BucketName = bucketName
+                BucketName = _bucketName
             };
 
-            var response = await this.s3Client.ListObjectsV2Async(request);
+            var response = await _s3Client.ListObjectsV2Async(request);
             return response.S3Objects.Select(o => o.Key).ToList();
         }
+
     }
 }

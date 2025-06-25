@@ -1,43 +1,78 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "D:\\Projects\\sf-backend-test-assignment-main\\FileStorage\\",
+  "WorkspaceRootPath": "D:\\Projects\\sf-backend-assignment\\FileStorage\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{4B82E64D-C272-49E8-B30A-571FF794651F}|FileStorage.csproj|d:\\projects\\sf-backend-test-assignment-main\\filestorage\\filestorage.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{4B82E64D-C272-49E8-B30A-571FF794651F}|FileStorage.csproj|solutionrelative:filestorage.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{4B82E64D-C272-49E8-B30A-571FF794651F}|FileStorage.csproj|d:\\projects\\sf-backend-test-assignment-main\\filestorage\\controllers\\filestoragecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4B82E64D-C272-49E8-B30A-571FF794651F}|FileStorage.csproj|d:\\projects\\sf-backend-assignment\\filestorage\\controllers\\filestoragecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4B82E64D-C272-49E8-B30A-571FF794651F}|FileStorage.csproj|solutionrelative:controllers\\filestoragecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40DFC0E4-8B7B-4D64-B704-54788234AD74}|..\\Tests\\sf-backend-ass-test\\FileStorage.Test.csproj|d:\\projects\\sf-backend-test-assignment-main\\tests\\sf-backend-ass-test\\services\\awss3servicestest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4B82E64D-C272-49E8-B30A-571FF794651F}|FileStorage.csproj|d:\\projects\\sf-backend-assignment\\filestorage\\services\\awss3service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B82E64D-C272-49E8-B30A-571FF794651F}|FileStorage.csproj|solutionrelative:services\\awss3service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4B82E64D-C272-49E8-B30A-571FF794651F}|FileStorage.csproj|d:\\projects\\sf-backend-test-assignment-main\\filestorage\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{4B82E64D-C272-49E8-B30A-571FF794651F}|FileStorage.csproj|d:\\projects\\sf-backend-assignment\\filestorage\\services\\s3bucketutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B82E64D-C272-49E8-B30A-571FF794651F}|FileStorage.csproj|solutionrelative:services\\s3bucketutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B82E64D-C272-49E8-B30A-571FF794651F}|FileStorage.csproj|d:\\projects\\sf-backend-assignment\\filestorage\\services\\dynamotableservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B82E64D-C272-49E8-B30A-571FF794651F}|FileStorage.csproj|solutionrelative:services\\dynamotableservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{40DFC0E4-8B7B-4D64-B704-54788234AD74}|..\\Tests\\sf-backend-ass-test\\FileStorage.Test.csproj|d:\\projects\\sf-backend-assignment\\tests\\sf-backend-ass-test\\controllerstest\\filecontrollertest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B82E64D-C272-49E8-B30A-571FF794651F}|FileStorage.csproj|d:\\projects\\sf-backend-assignment\\filestorage\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{4B82E64D-C272-49E8-B30A-571FF794651F}|FileStorage.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4B82E64D-C272-49E8-B30A-571FF794651F}|FileStorage.csproj|d:\\projects\\sf-backend-test-assignment-main\\filestorage\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{4B82E64D-C272-49E8-B30A-571FF794651F}|FileStorage.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{4B82E64D-C272-49E8-B30A-571FF794651F}|FileStorage.csproj|d:\\projects\\sf-backend-assignment\\filestorage\\filestorage.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{4B82E64D-C272-49E8-B30A-571FF794651F}|FileStorage.csproj|solutionrelative:filestorage.api.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4B82E64D-C272-49E8-B30A-571FF794651F}|FileStorage.csproj|d:\\projects\\sf-backend-test-assignment-main\\filestorage\\services\\contracts\\iawss3service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{4B82E64D-C272-49E8-B30A-571FF794651F}|FileStorage.csproj|solutionrelative:services\\contracts\\iawss3service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{4B82E64D-C272-49E8-B30A-571FF794651F}|FileStorage.csproj|d:\\projects\\sf-backend-assignment\\filestorage\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{4B82E64D-C272-49E8-B30A-571FF794651F}|FileStorage.csproj|solutionrelative:dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4B82E64D-C272-49E8-B30A-571FF794651F}|FileStorage.csproj|d:\\projects\\sf-backend-test-assignment-main\\filestorage\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{4B82E64D-C272-49E8-B30A-571FF794651F}|FileStorage.csproj|d:\\projects\\sf-backend-assignment\\filestorage\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{4B82E64D-C272-49E8-B30A-571FF794651F}|FileStorage.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{4B82E64D-C272-49E8-B30A-571FF794651F}|FileStorage.csproj|d:\\projects\\sf-backend-test-assignment-main\\filestorage\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{4B82E64D-C272-49E8-B30A-571FF794651F}|FileStorage.csproj|solutionrelative:dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
+      "AbsoluteMoniker": "D:0:0:{4B82E64D-C272-49E8-B30A-571FF794651F}|FileStorage.csproj|d:\\projects\\sf-backend-assignment\\filestorage\\models\\awsmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B82E64D-C272-49E8-B30A-571FF794651F}|FileStorage.csproj|solutionrelative:models\\awsmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B82E64D-C272-49E8-B30A-571FF794651F}|FileStorage.csproj|d:\\projects\\sf-backend-assignment\\filestorage\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4B82E64D-C272-49E8-B30A-571FF794651F}|FileStorage.csproj|solutionrelative:properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B82E64D-C272-49E8-B30A-571FF794651F}|FileStorage.csproj|d:\\projects\\sf-backend-assignment\\filestorage\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4B82E64D-C272-49E8-B30A-571FF794651F}|FileStorage.csproj|solutionrelative:appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B82E64D-C272-49E8-B30A-571FF794651F}|FileStorage.csproj|d:\\projects\\sf-backend-assignment\\filestorage\\services\\contracts\\iawss3service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B82E64D-C272-49E8-B30A-571FF794651F}|FileStorage.csproj|solutionrelative:services\\contracts\\iawss3service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B82E64D-C272-49E8-B30A-571FF794651F}|FileStorage.csproj|d:\\projects\\sf-backend-assignment\\filestorage\\services\\contracts\\idynamotableservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B82E64D-C272-49E8-B30A-571FF794651F}|FileStorage.csproj|solutionrelative:services\\contracts\\idynamotableservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B82E64D-C272-49E8-B30A-571FF794651F}|FileStorage.csproj|d:\\projects\\sf-backend-assignment\\filestorage\\services\\contracts\\is3bucketutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4B82E64D-C272-49E8-B30A-571FF794651F}|FileStorage.csproj|solutionrelative:services\\contracts\\is3bucketutil.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4B82E64D-C272-49E8-B30A-571FF794651F}|FileStorage.csproj|d:\\projects\\sf-backend-assignment\\filestorage\\filestorage.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{4B82E64D-C272-49E8-B30A-571FF794651F}|FileStorage.csproj|solutionrelative:filestorage.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Projects\\sf-backend-test-assignment-main\\docker-compose.yaml||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{40DFC0E4-8B7B-4D64-B704-54788234AD74}|..\\Tests\\sf-backend-ass-test\\FileStorage.Test.csproj|d:\\projects\\sf-backend-test-assignment-main\\tests\\sf-backend-ass-test\\unittest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Projects\\sf-backend-test-assignment-main\\Tests\\sf-backend-ass-test\\services\\AwsS3ServicesTest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Projects\\sf-backend-test-assignment-main\\Tests\\sf-backend-ass-test\\UnitTest1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,127 +81,247 @@
       "VerticalTabListWidth": 256,
       "DocumentGroups": [
         {
-          "DockedWidth": 164,
-          "SelectedChildIndex": 7,
+          "DockedWidth": 120,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Dockerfile",
-              "DocumentMoniker": "D:\\Projects\\sf-backend-test-assignment-main\\FileStorage\\Dockerfile",
-              "RelativeDocumentMoniker": "Dockerfile",
-              "ToolTip": "D:\\Projects\\sf-backend-test-assignment-main\\FileStorage\\Dockerfile",
-              "RelativeToolTip": "Dockerfile",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-06-24T14:13:26.506Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "FileStorageController.cs",
-              "DocumentMoniker": "D:\\Projects\\sf-backend-test-assignment-main\\FileStorage\\Controllers\\FileStorageController.cs",
-              "RelativeDocumentMoniker": "Controllers\\FileStorageController.cs",
-              "ToolTip": "D:\\Projects\\sf-backend-test-assignment-main\\FileStorage\\Controllers\\FileStorageController.cs",
-              "RelativeToolTip": "Controllers\\FileStorageController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAnAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\Projects\\sf-backend-assignment\\FileStorage\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\Projects\\sf-backend-assignment\\FileStorage\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAAACIAAAADAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-24T12:39:16.115Z"
+              "WhenOpened": "2025-06-25T05:44:29.232Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "D:\\Projects\\sf-backend-test-assignment-main\\FileStorage\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "appsettings.Development.json",
-              "ToolTip": "D:\\Projects\\sf-backend-test-assignment-main\\FileStorage\\appsettings.Development.json",
-              "RelativeToolTip": "appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-06-24T13:05:57.86Z"
+              "Title": "FileControllerTest.cs",
+              "DocumentMoniker": "D:\\Projects\\sf-backend-assignment\\Tests\\sf-backend-ass-test\\ControllersTest\\FileControllerTest.cs",
+              "RelativeDocumentMoniker": "..\\Tests\\sf-backend-ass-test\\ControllersTest\\FileControllerTest.cs",
+              "ToolTip": "D:\\Projects\\sf-backend-assignment\\Tests\\sf-backend-ass-test\\ControllersTest\\FileControllerTest.cs",
+              "RelativeToolTip": "..\\Tests\\sf-backend-ass-test\\ControllersTest\\FileControllerTest.cs",
+              "ViewState": "AgIAAE8AAAAAAAAAAAAuwFoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-25T05:38:47.791Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Projects\\sf-backend-test-assignment-main\\FileStorage\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "D:\\Projects\\sf-backend-test-assignment-main\\FileStorage\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAoAAAAAAAAAA==",
+              "Title": "DynamoTableService.cs",
+              "DocumentMoniker": "D:\\Projects\\sf-backend-assignment\\FileStorage\\Services\\DynamoTableService.cs",
+              "RelativeDocumentMoniker": "Services\\DynamoTableService.cs",
+              "ToolTip": "D:\\Projects\\sf-backend-assignment\\FileStorage\\Services\\DynamoTableService.cs",
+              "RelativeToolTip": "Services\\DynamoTableService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAABAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-24T12:54:47.077Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "IAwsS3Service.cs",
-              "DocumentMoniker": "D:\\Projects\\sf-backend-test-assignment-main\\FileStorage\\Services\\Contracts\\IAwsS3Service.cs",
-              "RelativeDocumentMoniker": "Services\\Contracts\\IAwsS3Service.cs",
-              "ToolTip": "D:\\Projects\\sf-backend-test-assignment-main\\FileStorage\\Services\\Contracts\\IAwsS3Service.cs",
-              "RelativeToolTip": "Services\\Contracts\\IAwsS3Service.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-24T12:49:10.03Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "docker-compose.yaml",
-              "DocumentMoniker": "D:\\Projects\\sf-backend-test-assignment-main\\docker-compose.yaml",
-              "RelativeDocumentMoniker": "..\\docker-compose.yaml",
-              "ToolTip": "D:\\Projects\\sf-backend-test-assignment-main\\docker-compose.yaml",
-              "RelativeToolTip": "..\\docker-compose.yaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACUAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
-              "WhenOpened": "2025-06-24T14:13:42.651Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\Projects\\sf-backend-test-assignment-main\\FileStorage\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "D:\\Projects\\sf-backend-test-assignment-main\\FileStorage\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-06-24T12:56:28.65Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FileStorage.csproj",
-              "DocumentMoniker": "D:\\Projects\\sf-backend-test-assignment-main\\FileStorage\\FileStorage.csproj",
-              "RelativeDocumentMoniker": "FileStorage.csproj",
-              "ToolTip": "D:\\Projects\\sf-backend-test-assignment-main\\FileStorage\\FileStorage.csproj",
-              "RelativeToolTip": "FileStorage.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-06-24T12:50:04.908Z",
+              "WhenOpened": "2025-06-24T21:34:04.778Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "S3BucketUtil.cs",
+              "DocumentMoniker": "D:\\Projects\\sf-backend-assignment\\FileStorage\\Services\\S3BucketUtil.cs",
+              "RelativeDocumentMoniker": "Services\\S3BucketUtil.cs",
+              "ToolTip": "D:\\Projects\\sf-backend-assignment\\FileStorage\\Services\\S3BucketUtil.cs",
+              "RelativeToolTip": "Services\\S3BucketUtil.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T22:16:40.345Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "FileStorageController.cs",
+              "DocumentMoniker": "D:\\Projects\\sf-backend-assignment\\FileStorage\\Controllers\\FileStorageController.cs",
+              "RelativeDocumentMoniker": "Controllers\\FileStorageController.cs",
+              "ToolTip": "D:\\Projects\\sf-backend-assignment\\FileStorage\\Controllers\\FileStorageController.cs",
+              "RelativeToolTip": "Controllers\\FileStorageController.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAA1wB4AAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T12:39:16.115Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "FileStorage.Api.http",
+              "DocumentMoniker": "D:\\Projects\\sf-backend-assignment\\FileStorage\\FileStorage.Api.http",
+              "RelativeDocumentMoniker": "FileStorage.Api.http",
+              "ToolTip": "D:\\Projects\\sf-backend-assignment\\FileStorage\\FileStorage.Api.http",
+              "RelativeToolTip": "FileStorage.Api.http",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2025-06-25T05:38:39.905Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Projects\\sf-backend-assignment\\FileStorage\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "D:\\Projects\\sf-backend-assignment\\FileStorage\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-24T12:56:28.65Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Dockerfile",
+              "DocumentMoniker": "D:\\Projects\\sf-backend-assignment\\FileStorage\\Dockerfile",
+              "RelativeDocumentMoniker": "Dockerfile",
+              "ToolTip": "D:\\Projects\\sf-backend-assignment\\FileStorage\\Dockerfile",
+              "RelativeToolTip": "Dockerfile",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-06-24T14:13:26.506Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "AWSModels.cs",
+              "DocumentMoniker": "D:\\Projects\\sf-backend-assignment\\FileStorage\\Models\\AWSModels.cs",
+              "RelativeDocumentMoniker": "Models\\AWSModels.cs",
+              "ToolTip": "D:\\Projects\\sf-backend-assignment\\FileStorage\\Models\\AWSModels.cs",
+              "RelativeToolTip": "Models\\AWSModels.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T19:31:17.395Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AwsS3Service.cs",
+              "DocumentMoniker": "D:\\Projects\\sf-backend-assignment\\FileStorage\\Services\\AwsS3Service.cs",
+              "RelativeDocumentMoniker": "Services\\AwsS3Service.cs",
+              "ToolTip": "D:\\Projects\\sf-backend-assignment\\FileStorage\\Services\\AwsS3Service.cs",
+              "RelativeToolTip": "Services\\AwsS3Service.cs",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAzwGoAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T19:51:53.78Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "D:\\Projects\\sf-backend-assignment\\FileStorage\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "Properties\\launchSettings.json",
+              "ToolTip": "D:\\Projects\\sf-backend-assignment\\FileStorage\\Properties\\launchSettings.json",
+              "RelativeToolTip": "Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-24T22:28:41.266Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IAwsS3Service.cs",
+              "DocumentMoniker": "D:\\Projects\\sf-backend-assignment\\FileStorage\\Services\\Contracts\\IAwsS3Service.cs",
+              "RelativeDocumentMoniker": "Services\\Contracts\\IAwsS3Service.cs",
+              "ToolTip": "D:\\Projects\\sf-backend-assignment\\FileStorage\\Services\\Contracts\\IAwsS3Service.cs",
+              "RelativeToolTip": "Services\\Contracts\\IAwsS3Service.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T21:47:51.575Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "IDynamoTableService.cs",
+              "DocumentMoniker": "D:\\Projects\\sf-backend-assignment\\FileStorage\\Services\\Contracts\\IDynamoTableService.cs",
+              "RelativeDocumentMoniker": "Services\\Contracts\\IDynamoTableService.cs",
+              "ToolTip": "D:\\Projects\\sf-backend-assignment\\FileStorage\\Services\\Contracts\\IDynamoTableService.cs",
+              "RelativeToolTip": "Services\\Contracts\\IDynamoTableService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T21:29:13.243Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "D:\\Projects\\sf-backend-assignment\\FileStorage\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "appsettings.Development.json",
+              "ToolTip": "D:\\Projects\\sf-backend-assignment\\FileStorage\\appsettings.Development.json",
+              "RelativeToolTip": "appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-06-24T20:02:35.851Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IS3BucketUtil.cs",
+              "DocumentMoniker": "D:\\Projects\\sf-backend-assignment\\FileStorage\\Services\\Contracts\\IS3BucketUtil.cs",
+              "RelativeDocumentMoniker": "Services\\Contracts\\IS3BucketUtil.cs",
+              "ToolTip": "D:\\Projects\\sf-backend-assignment\\FileStorage\\Services\\Contracts\\IS3BucketUtil.cs",
+              "RelativeToolTip": "Services\\Contracts\\IS3BucketUtil.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-24T21:39:32.519Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "FileStorage",
+              "DocumentMoniker": "D:\\Projects\\sf-backend-assignment\\FileStorage\\FileStorage.csproj",
+              "RelativeDocumentMoniker": "FileStorage.csproj",
+              "ToolTip": "D:\\Projects\\sf-backend-assignment\\FileStorage\\FileStorage.csproj",
+              "RelativeToolTip": "FileStorage.csproj",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAcwA8AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-24T19:53:38.198Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "docker-compose.yaml",
+              "DocumentMoniker": "D:\\Projects\\sf-backend-test-assignment-main\\docker-compose.yaml",
+              "RelativeDocumentMoniker": "..\\..\\sf-backend-test-assignment-main\\docker-compose.yaml",
+              "ToolTip": "D:\\Projects\\sf-backend-test-assignment-main\\docker-compose.yaml",
+              "RelativeToolTip": "..\\..\\sf-backend-test-assignment-main\\docker-compose.yaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2025-06-24T14:13:42.651Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
               "Title": "AwsS3ServicesTest.cs",
               "DocumentMoniker": "D:\\Projects\\sf-backend-test-assignment-main\\Tests\\sf-backend-ass-test\\services\\AwsS3ServicesTest.cs",
-              "RelativeDocumentMoniker": "..\\Tests\\sf-backend-ass-test\\services\\AwsS3ServicesTest.cs",
+              "RelativeDocumentMoniker": "..\\..\\sf-backend-test-assignment-main\\Tests\\sf-backend-ass-test\\services\\AwsS3ServicesTest.cs",
               "ToolTip": "D:\\Projects\\sf-backend-test-assignment-main\\Tests\\sf-backend-ass-test\\services\\AwsS3ServicesTest.cs",
-              "RelativeToolTip": "..\\Tests\\sf-backend-ass-test\\services\\AwsS3ServicesTest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "RelativeToolTip": "..\\..\\sf-backend-test-assignment-main\\Tests\\sf-backend-ass-test\\services\\AwsS3ServicesTest.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-24T17:03:32.816Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 18,
               "Title": "UnitTest1.cs",
               "DocumentMoniker": "D:\\Projects\\sf-backend-test-assignment-main\\Tests\\sf-backend-ass-test\\UnitTest1.cs",
-              "RelativeDocumentMoniker": "..\\Tests\\sf-backend-ass-test\\UnitTest1.cs",
+              "RelativeDocumentMoniker": "..\\..\\sf-backend-test-assignment-main\\Tests\\sf-backend-ass-test\\UnitTest1.cs",
               "ToolTip": "D:\\Projects\\sf-backend-test-assignment-main\\Tests\\sf-backend-ass-test\\UnitTest1.cs",
-              "RelativeToolTip": "..\\Tests\\sf-backend-ass-test\\UnitTest1.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "RelativeToolTip": "..\\..\\sf-backend-test-assignment-main\\Tests\\sf-backend-ass-test\\UnitTest1.cs",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-24T17:01:51.229Z"
             }
